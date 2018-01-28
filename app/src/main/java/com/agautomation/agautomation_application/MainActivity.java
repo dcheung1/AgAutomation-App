@@ -52,15 +52,6 @@ public class MainActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        progressDialog = new ProgressDialog(this);
-        buttonRegister = (Button) findViewById(R.id.buttonRegister);
-        editTextEmail = (EditText) findViewById(R.id.editTextEmail);
-        editTextPassword = (EditText) findViewById(R.id.editTextPassword);
-        textViewSignin = (TextView) findViewById(R.id.textViewSignin);
-
-        buttonRegister.setOnClickListener(this);
-        textViewSignin.setOnClickListener(this);
-
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -138,39 +129,12 @@ public class MainActivity
         Log.d(TAG, "Connection Failed.");
     }
 
-    private void registerUser(){
-        String email = editTextEmail.getText().toString().trim();
-        String password = editTextPassword.getText().toString().trim();
-
-        if(TextUtils.isEmpty(email)){
-            //email is empty
-            Toast.makeText(this, "Please Enter Your Email", Toast.LENGTH_SHORT).show();
-            //stop function from continuing
-            return;
-        }
-        if(TextUtils.isEmpty(password)){
-            //pass is empty
-            Toast.makeText(this, "Please Enter Your Password", Toast.LENGTH_SHORT).show();
-            //stop function from continuing
-            return;
-        }
-        //if validations are ok, register the user
-        progressDialog.setMessage("Registering User...");
-        progressDialog.show();
-    }
-
     @Override
     public void onClick(View view){
 
-        switch(view.getId()){
+        switch(view.getId()) {
             case R.id.sign_in_button:
                 signIn();
-                break;
-            case R.id.buttonRegister:
-                registerUser();
-                break;
-            case R.id.textViewSignin:
-                //will open login activity here
                 break;
         }
     }

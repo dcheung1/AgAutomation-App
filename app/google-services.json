@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "682230267765",
+    "firebase_url": "https://agautomation-application.firebaseio.com",
+    "project_id": "agautomation-application",
+    "storage_bucket": "agautomation-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682230267765:android:07fda7af2e15adef",
+        "android_client_info": {
+          "package_name": "com.agautomation.agautomation_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682230267765-o67ugn58b9de9rfqksv5pormdgtbj09t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agautomation.agautomation_application",
+            "certificate_hash": "b966425606ff777af73728762fa6833b8a54659d"
+          }
+        },
+        {
+          "client_id": "682230267765-lgbibi3ouuj5gcmv9bgddhppqjrr82th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI8qmbwkKXE3TiBwpp5dfrDTb-s6OIV5k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682230267765-lgbibi3ouuj5gcmv9bgddhppqjrr82th.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
