@@ -30,5 +30,13 @@
             android:visibility="invisible"
             tools:ignore="HardcodedText,RtlCompat" />
 
+        <Button
+            android:id="@+id/buttonLogout"
+            android:text="Logout"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:onClick="signOut" />
+
+
     </LinearLayout>
 </ScrollView>
