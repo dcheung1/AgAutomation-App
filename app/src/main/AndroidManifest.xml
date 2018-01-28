@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FarmsOverview"></activity>
+        <activity android:name=".farms_overview"></activity>
         <activity android:name=".FarmsData"></activity>
     </application>
 
