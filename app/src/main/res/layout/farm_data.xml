@@ -1,23 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#E0F2F1"
+    tools:layout_editor_absoluteY="81dp">
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
 
-
     </LinearLayout>
+    <!--
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/nitrogen"
+        android:src="@drawable/droplet"
+        android:text="Water Level"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E1F5FE"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="120dp" />
+    -->
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/nitrogen"
+        android:text="Nitrogen Level"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="120dp"
+        tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/nitrogen"
+        android:text="Temperature"
+        android:textAllCaps="false"
+        android:textColor="#E0F2F1"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="300dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/nitrogen"
+        android:text="Energy Consumption"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="300dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_height="75dp"
+        android:textAllCaps="true"
+        android:textColor="#00695C"
+        android:textSize="36sp"
+        android:background="@drawable/energy"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="20dp"
+        android:layout_width="325dp"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/nitrogen"
+        android:elevation="24dp"
+        android:scaleType="fitXY"
+        android:text="Water Level"
+        app:srcCompat="@drawable/droplet"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:text="Farm 1"
+        android:textSize="24dp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="320dp"
+        android:layout_height="20dp"
+        android:text="Next Harvest: 6 Days"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="50dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="320dp"
+        android:layout_height="20dp"
+        android:text="Location: 1011 Ridge Point Drive"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="70dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        app:srcCompat="@drawable/nitro"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="227dp" />
 
-</ScrollView>
+</android.support.constraint.ConstraintLayout>
